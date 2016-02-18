@@ -23,7 +23,7 @@
 		      <p>생활코딩 오프라인 수업 중 제작한 페이지입니다.</p>
 		      <p><a class="btn btn-primary btn-lg" href="http://opentutorials.org" role="button">생활코딩</a></p>
 		    </div>
-		  </div>
+			</div>
 
 <!--header 끝-->
 
@@ -31,11 +31,16 @@
 			<div class="row-fluid">
 	      <div class="span2">
 					<ul class="nav nav-pills nav-stacked">
-							<li role="presentation"><a href="index.php">index</a></li>
-							<li role="presentation"><a href="index.php?id=1">HTML</a></li>
-						  <li role="presentation"><a href="index.php?id=2">CSS</a></li>
-						  <li role="presentation"><a href="index.php?id=3">JavaScript</a></li>
+							<li role="presentation" id="index" onclick="document.getElementById('index').className='active'" ><a href="index.php">index</a></li>
+							<li role="presentation" id="html" onclick="document.getElementById('html').className='active'"><a href="index.php?id=1">HTML</a></li>
+						  <li role="presentation" id="css" onclick="document.getElementById('css').className='active'"><a href="index.php?id=2">CSS</a></li>
+						  <li role="presentation" id="javascript" onclick="document.getElementById('javascript').className='active'"><a href="index.php?id=3">JavaScript</a></li>
 						</ul>
+					<script>
+						document.getElementById('index')
+
+					</script>
+
 				</div>
 
 	      <div class="span10">
