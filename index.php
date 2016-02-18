@@ -51,7 +51,7 @@
                 if ($id==null){ //index.php 기본 화면
                   print(file_get_contents('index.txt'));
                 } else { //메뉴마다 다른 화면
-                  $data = file_get_contents($id.'.txt'); //경로명으로 파일 파싱
+                  $data = file_get_contents($id.'.txt'); //경로명으로 파일 텍스트 가져오기
                   print($data);
                 }
             ?>
